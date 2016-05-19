@@ -1,0 +1,35 @@
+:host {
+    box-shadow: 0 1px 2px 0 rgba(0,0,0,0.1),0 2px 8px 0 rgba(0,0,0,0.09);
+    max-width: 500px;
+    min-width: 300px;
+    position: relative;
+}
+
+:host:hover .glyphicon-remove {
+    display: block;
+    position: absolute;
+    cursor: pointer;
+    right: 4px;
+    top: 4px;
+    font-size: 16px;
+    color: #d9534f;
+    text-shadow: 1px 1px 2px black;
+}
+
+.glyphicon-remove {
+    display: none;
+}
+
+.card-block {
+    padding: 8px;
+}
+
+.card-block img {
+    width: 100%;
+}
+
+.card-block p {
+    line-height: 1em;
+    max-height: 3em;
+    overflow: hidden;
+}

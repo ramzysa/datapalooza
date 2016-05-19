@@ -1,0 +1,8 @@
+<div class="card">
+    <img [src]="getImageUrl()">
+    <div class="card-block">
+        <h4 [title]="post.name">{{post.name}}</h4>
+        <p>{{post.description}}</p>
+    </div>
+    <div (click)="onDelete()" class="glyphicon glyphicon-remove"></div>
+</div>

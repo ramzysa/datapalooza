@@ -1,0 +1,16 @@
+:host {
+    padding: 24px;
+    display: block;
+}
+
+.posts {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: stretch;
+    margin: -8px;
+}
+
+.posts > my-post {
+    flex: 1;
+    margin: 8px;
+}

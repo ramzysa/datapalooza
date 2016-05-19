@@ -1,0 +1,18 @@
+<div class="container">
+    <h1>Post a new Image</h1>
+    <form (ngSubmit)="submit(image)" #postForm="ngForm">
+      <div class="form-group">
+        <label for="name">Name</label>
+        <input type="text" class="form-control" id="name" required [(ngModel)]="model.name" ngControl="name">
+      </div>
+      <div class="form-group">
+        <label for="description">Description</label>
+        <textarea class="form-control" id="description" [(ngModel)]="model.description" ngControl="description"></textarea>
+      </div>
+      <div class="form-group">
+        <label for="image">Image</label>
+        <input type="file" class="form-control" id="image" required [(ngModel)]="imageFile" #image>
+      </div>
+      <button type="submit" class="btn btn-default">Submit</button>
+    </form>
+</div>
