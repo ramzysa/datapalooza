@@ -4,6 +4,7 @@
 ## Installation
 `npm install`
 
+Sign up for a [cloudant](https://cloudant.com/) account.
 Then Fill your cloudant credentials in `lib/cloudant-access.js`
 
 ## Run App
