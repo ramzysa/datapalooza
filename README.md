@@ -15,6 +15,8 @@ $ npm install
 Sign up for a [cloudant](https://cloudant.com/) account, create a new database with the name `posts`. Then fill your cloudant credentials in `lib/cloudant-access.js`.
 
 ## Usage
-`$ npm start`
+```
+$ npm start
+```
 
 Navigate to the app using the url printed in the console.
