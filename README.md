@@ -6,7 +6,7 @@ Make sure you have `node` and `npm` installed.
 
 Run `npm install`
 
-Sign up for a [cloudant](https://cloudant.com/) account. Then fill your cloudant credentials in `lib/cloudant-access.js`
+Sign up for a [cloudant](https://cloudant.com/) account, create a new database with the name `posts`. Then fill your cloudant credentials in `lib/cloudant-access.js`.
 
 ## Usage
 Run `npm start` to start the server.
