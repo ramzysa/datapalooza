@@ -2,11 +2,11 @@
 [Datapalooza Confrence](http://www.spark.tc/datapalooza/tel-aviv/)
 
 ## Installation
-`npm install`
+Make sure you have `node` and `npm` installed.
 
-Sign up for a [cloudant](https://cloudant.com/) account.
-Then Fill your cloudant credentials in `lib/cloudant-access.js`
+Run `npm install`
 
-## Run App
-`npm start`
+Sign up for a [cloudant](https://cloudant.com/) account. Then fill your cloudant credentials in `lib/cloudant-access.js`
 
+## Usage
+Run `npm start` to start the server.
