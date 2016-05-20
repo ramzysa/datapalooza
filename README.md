@@ -2,15 +2,19 @@
 [Datapalooza Confrence](http://www.spark.tc/datapalooza/tel-aviv/)
 
 ## Installation
-Clone this repository, using `git clone https://github.com/ramzysa/datapalooza-cloud-dev`.
+Make sure you have `node`, `npm` and `git` installed.
 
-Make sure you have `node` and `npm` installed.
+Clone this repository and install the npm dependencies.
 
-Run `npm install` in the repository directory.
+```
+$ git clone https://github.com/ramzysa/datapalooza-cloud-dev
+$ cd datapalooza-cloud-dev
+$ npm install
+```
 
 Sign up for a [cloudant](https://cloudant.com/) account, create a new database with the name `posts`. Then fill your cloudant credentials in `lib/cloudant-access.js`.
 
 ## Usage
-Run `npm start` to start the server.
+`$ npm start`
 
 Navigate to the app using the url printed in the console.
