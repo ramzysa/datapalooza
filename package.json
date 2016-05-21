@@ -1,8 +1,8 @@
 {
   "name": "datapalooza-cloud-dev",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "Accelerated Cloud Development with Angular 2 & NodeJS",
-  "author": "Ramzi Samman ramzis@il.ibm.com",
+  "author": "Ramzi Samman <ramzis@il.ibm.com>",
   "main": "app.js",
   "scripts": {
     "start": "node app.js",
