@@ -13,12 +13,6 @@ export class PostService {
 
     constructor(private http: Http) { }
 
-    getJsonRequestOptions(): RequestOptions {
-        return new RequestOptions({
-            headers : new Headers({"Content-Type": "application/json"})
-        });
-    }
-
     getPosts(): Observable<Post[]> {
         return this.http.get(POSTS_API_PATH)
             .map((response: Response) => <Post[]>response.json());
@@ -55,6 +49,12 @@ export class PostService {
             var formData = new FormData();
             formData.append(file.name, file);
             xhr.send(formData);
+        });
+    }
+
+    getJsonRequestOptions(): RequestOptions {
+        return new RequestOptions({
+            headers : new Headers({"Content-Type": "application/json"})
         });
     }
 
