@@ -8,7 +8,7 @@ Clone this repository and install the npm dependencies.
 
 ```
 $ git clone https://github.com/ramzysa/datapalooza
-$ cd datapalooza-cloud-dev
+$ cd datapalooza
 $ npm install
 ```
 

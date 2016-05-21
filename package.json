@@ -7,7 +7,7 @@
   "scripts": {
     "start": "node app.js",
     "serve": "tsc && concurrently \"npm run tsc:w\" \"node app.js\"",
-    "postinstall": "typings install && echo \"declare var module: any;\" > typings/module-shim.d.ts",
+    "prepublish": "typings install && echo \"declare var module: any;\" > typings/module-shim.d.ts && tsc",
     "tsc": "tsc",
     "tsc:w": "tsc -w",
     "typings": "typings"
