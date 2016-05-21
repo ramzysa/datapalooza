@@ -4,6 +4,7 @@
     min-width: 300px;
     position: relative;
 }
+
 :host:hover .glyphicon-remove {
     display: block;
     position: absolute;
@@ -14,21 +15,21 @@
     color: #d9534f;
     text-shadow: 1px 1px 2px black;
 }
-.card {
-    display: flex;
-    height: 100%;
-    flex-direction: column;
-    justify-content: space-between;
-}
+
 .glyphicon-remove {
     display: none;
 }
+
 .card-block {
     padding: 8px;
 }
+
 .card img {
     width: 100%;
+    object-fit: cover;
+    max-height: 400px;
 }
+
 .card-block p {
     line-height: 1em;
     max-height: 3em;
