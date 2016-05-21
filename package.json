@@ -7,10 +7,7 @@
   "scripts": {
     "start": "node app.js",
     "serve": "tsc && concurrently \"npm run tsc:w\" \"node app.js\"",
-    "prepublish": "typings install && echo \"declare var module: any;\" > typings/module-shim.d.ts && tsc",
-    "tsc": "tsc",
-    "tsc:w": "tsc -w",
-    "typings": "typings"
+    "prepublish": "typings install && echo \"declare var module: any;\" > typings/module-shim.d.ts && tsc"
   },
   "repository": {
     "type": "git",
