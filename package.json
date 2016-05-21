@@ -2,12 +2,19 @@
   "name": "datapalooza-cloud-dev",
   "version": "0.0.1",
   "description": "Accelerated Cloud Development with Angular 2 & NodeJS",
+  "author": "Ramzi Samman ramzis@il.ibm.com",
+  "main": "app.js",
   "scripts": {
-    "start": "tsc && concurrently \"npm run tsc:w\" \"node app.js\"",
+    "start": "node app.js",
+    "serve": "tsc && concurrently \"npm run tsc:w\" \"node app.js\"",
     "postinstall": "typings install && echo \"declare var module: any;\" > typings/module-shim.d.ts",
     "tsc": "tsc",
     "tsc:w": "tsc -w",
     "typings": "typings"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ramzysa/datapalooza"
   },
   "dependencies": {
     "@angular/common": "2.0.0-rc.1",
@@ -34,8 +41,8 @@
   },
   "devDependencies": {
     "concurrently": "^2.1.0",
-    "live-server": "^0.8.1",
     "typescript": "^1.8.10",
     "typings": "^0.8.1"
-  }
+  },
+  "license": "MIT"
 }

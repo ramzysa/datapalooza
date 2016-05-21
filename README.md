@@ -7,7 +7,7 @@ Make sure you have `node`, `npm` and `git` installed.
 Clone this repository and install the npm dependencies.
 
 ```
-$ git clone https://github.com/ramzysa/datapalooza-cloud-dev
+$ git clone https://github.com/ramzysa/datapalooza
 $ cd datapalooza-cloud-dev
 $ npm install
 ```
@@ -16,7 +16,7 @@ Sign up for a [cloudant](https://cloudant.com/) account, create a new database w
 
 ## Usage
 ```
-$ npm start
+$ npm run serve 
 ```
 
 Navigate to the app using the url printed in the console.

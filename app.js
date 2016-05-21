@@ -1,15 +1,13 @@
-"use strict";
-
 var express = require('express');
 var cfenv = require('cfenv');
 var bodyParser = require('body-parser');
-var postsApi = require("./api/posts");
+var postsApi = require('./api/posts');
 
 var app = express();
 
 // static files
 app.use(express.static(__dirname + '/client'));
-app.use(express.static(__dirname + '/client/build'));
+app.use(express.static(__dirname + '/client/dist'));
 app.use('/node_modules', express.static(__dirname + '/node_modules'));
 
 // REST api

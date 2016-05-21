@@ -1,5 +1,6 @@
 var express = require('express');
 var router = express.Router();
+var multer  = require('multer');
 var cloudant = require('../lib/cloudant-access');
 
 var postsdb = cloudant.db.use('posts');
@@ -34,8 +35,6 @@ router.delete('/:postId', (req, res) => {
 router.get('/:postId/image', (req, res) => {
 	postsdb.attachment.get(req.params.postId, 'IMAGE').pipe(res);
 });
-
-var multer  = require('multer');
 
 router.put('/:postId/image', multer().any(), (req, res, next) => {
 	var imageFile = req.files[0];

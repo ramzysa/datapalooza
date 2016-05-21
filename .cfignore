@@ -11,6 +11,3 @@
 .idea
 .vscode
 *.iml
-
-# dist dir
-/client/dist
