@@ -6,7 +6,7 @@ var postsdb = cloudant.db.use('posts');
 
 router.get('/', (req, res) => {
 	postsdb.list({ include_docs : true }, function(err, posts) {
-		var response = posts.rows.map(function(row) {
+		var response = !posts.rows ? [] : posts.rows.map(function(row) {
 			return row.doc;
 		});
 		res.json(response);
