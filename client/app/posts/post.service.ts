@@ -1,4 +1,4 @@
-import { Injectable, ElementRef} from '@angular/core';
+import { Injectable } from '@angular/core';
 import { Http, Response, Headers, RequestOptions } from '@angular/http';
 import { Observable } from 'rxjs/Observable';
 import { Observer } from 'rxjs/Observer';
@@ -20,10 +20,7 @@ export class PostService {
 
     createPost(post: Post): Observable<string>  {
         return this.http.post(POSTS_API_PATH, JSON.stringify(post), this.getJsonRequestOptions())
-            .map((response: Response) => {
-                let location = response.headers.get('Location');
-                return location.substring(location.lastIndexOf('/')+1);
-            });
+            .map((response: Response) => response.json().id);
     }
 
     deletePost(post: Post): Observable<any> {
@@ -54,7 +51,7 @@ export class PostService {
 
     getJsonRequestOptions(): RequestOptions {
         return new RequestOptions({
-            headers : new Headers({"Content-Type": "application/json"})
+            headers : new Headers({'Content-Type': 'application/json'})
         });
     }
 

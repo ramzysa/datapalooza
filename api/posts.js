@@ -15,7 +15,7 @@ router.get('/', (req, res) => {
 
 router.post('/', (req, res) => {
 	postsdb.insert(req.body, function(err, savedPost) {
-		res.status(201).location('/' + savedPost.id).send();
+		res.status(201).location('/' + savedPost.id).send(savedPost);
 	});
 });
 

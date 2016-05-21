@@ -3,11 +3,11 @@
     <form (ngSubmit)="submit(image)" #postForm="ngForm">
       <div class="form-group">
         <label for="name">Name</label>
-        <input type="text" class="form-control" id="name" required [(ngModel)]="model.name" ngControl="name">
+        <input type="text" class="form-control" id="name" required [(ngModel)]="post.name" ngControl="name">
       </div>
       <div class="form-group">
         <label for="description">Description</label>
-        <textarea class="form-control" id="description" [(ngModel)]="model.description" ngControl="description"></textarea>
+        <textarea class="form-control" id="description" [(ngModel)]="post.description" ngControl="description"></textarea>
       </div>
       <div class="form-group">
         <label for="image">Image</label>

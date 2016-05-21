@@ -21,8 +21,8 @@ export class HomeComponent implements OnInit {
         this.loadPosts();
     }
 
-    onPostDelete() {
-        this.loadPosts();
+    onPostDelete(post: Post) {
+        this.postService.deletePost(post).subscribe(() => this.loadPosts());
     }
 
     loadPosts() {

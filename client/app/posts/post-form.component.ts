@@ -12,12 +12,12 @@ import { PostService } from './post.service';
 })
 export class PostFormComponent {
 
-  model = new Post();
+  post = new Post();
 
   constructor(private postsService: PostService, private router: Router) { }
 
   submit(fileElement: any) {
-      this.postsService.createPost(this.model).subscribe((postId: string) => {
+      this.postsService.createPost(this.post).subscribe((postId: string) => {
           let file: File = <File>fileElement.files[0];
           this.postsService.uploadImage(postId, file).subscribe(() => {
               this.router.navigate(['/']);

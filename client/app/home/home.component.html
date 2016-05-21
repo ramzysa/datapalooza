@@ -1,4 +1,5 @@
 <h3>Posts</h3>
 <div class="posts">
-    <my-post *ngFor="let post of posts" [post]="post" (delete)="onPostDelete($event)"></my-post>
+    <my-post *ngFor="let post of posts" [post]="post" (delete)="onPostDelete(post)"></my-post>
+    <div *ngIf="posts && posts.length == 0">No Posts</div>
 </div>

@@ -21,7 +21,7 @@ export class PostComponent {
     }
 
     onDelete() {
-        this.postService.deletePost(this.post).subscribe(() => this.delete.emit(this.post));
+        this.delete.emit(this.post);
     }
 
 }
