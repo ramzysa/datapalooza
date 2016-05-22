@@ -6,7 +6,7 @@
   "main": "app.js",
   "scripts": {
     "start": "node app.js",
-    "serve": "tsc && concurrently \"npm run tsc:w\" \"node app.js\"",
+    "serve": "tsc && concurrently \"tsc -w\" \"node app.js\"",
     "prepublish": "typings install && echo \"declare var module: any;\" > typings/module-shim.d.ts && tsc"
   },
   "repository": {

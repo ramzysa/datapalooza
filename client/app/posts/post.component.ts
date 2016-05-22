@@ -1,7 +1,6 @@
 import { Component, Input, Output, EventEmitter } from '@angular/core';
 
 import { Post } from './post.model';
-import { PostService } from './post.service';
 
 @Component({
     moduleId: module.id,
@@ -14,7 +13,7 @@ export class PostComponent {
     @Input() private post: Post;
     @Output() delete = new EventEmitter();
 
-    constructor(private postService: PostService) { }
+    constructor() { }
 
     getImageUrl() {
         return '/api/posts/' + this.post._id + '/image';

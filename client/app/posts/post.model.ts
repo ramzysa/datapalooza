@@ -1,6 +1,6 @@
 export class Post {
     public _id: string;
-    public _rev: String;
+    public _rev: string;
     public name: string;
     public description: string;
 }
