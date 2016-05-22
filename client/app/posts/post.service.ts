@@ -2,7 +2,6 @@ import { Injectable } from '@angular/core';
 import { Http, Response, Headers, RequestOptions } from '@angular/http';
 import { Observable } from 'rxjs/Observable';
 import { Observer } from 'rxjs/Observer';
-import 'rxjs/add/operator/map';
 
 import { Post } from './post.model';
 
